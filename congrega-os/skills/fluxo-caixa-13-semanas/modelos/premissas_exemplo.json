@@ -1,0 +1,231 @@
+{
+  "cliente": "Distribuidora Exemplo Ltda",
+  "regime_tributario": "Lucro Presumido",
+  "data_inicio": "2026-10-05",
+  "saldo_inicial": 380000.0,
+  "caixa_restrito": 20000.0,
+  "saldo_minimo": 150000.0,
+  "limite_credito_disponivel": 200000.0,
+  "feriados_adicionais": [
+    "2026-11-20"
+  ],
+  "atraso_medio_dias": 6,
+  "prazo_cobranca_vencidos_dias": 14,
+  "probabilidade_recebimento": {
+    "a_vencer": 0.97,
+    "1-30": 0.85,
+    "31-60": 0.65,
+    "61-90": 0.4,
+    "91-180": 0.2,
+    "180+": 0.05
+  },
+  "contas_receber": [
+    {
+      "cliente": "Rede Supermercados A",
+      "vencimento": "2026-10-08",
+      "valor": 180000.0
+    },
+    {
+      "cliente": "Atacado B",
+      "vencimento": "2026-10-15",
+      "valor": 150000.0
+    },
+    {
+      "cliente": "Prefeitura C (retenção IR 1,2%)",
+      "vencimento": "2026-10-20",
+      "valor": 70000.0,
+      "retencoes": 840.0
+    },
+    {
+      "cliente": "Rede Supermercados A",
+      "vencimento": "2026-10-22",
+      "valor": 140000.0
+    },
+    {
+      "cliente": "Varejo D",
+      "vencimento": "2026-09-10",
+      "valor": 42000.0
+    },
+    {
+      "cliente": "Varejo E",
+      "vencimento": "2026-07-30",
+      "valor": 28000.0
+    },
+    {
+      "cliente": "Recebíveis de cartão (liquidação D+30)",
+      "vencimento": "2026-10-30",
+      "valor": 55000.0,
+      "probabilidade": 1.0
+    },
+    {
+      "cliente": "Atacado B",
+      "vencimento": "2026-11-05",
+      "valor": 110000.0
+    }
+  ],
+  "vendas_novas_semanais": [
+    0,
+    0,
+    0,
+    0,
+    80000,
+    175000,
+    180000,
+    185000,
+    190000,
+    200000,
+    220000,
+    230000,
+    160000
+  ],
+  "contas_pagar": [
+    {
+      "fornecedor": "Indústria X",
+      "vencimento": "2026-10-07",
+      "valor": 110000.0
+    },
+    {
+      "fornecedor": "Indústria Y",
+      "vencimento": "2026-10-14",
+      "valor": 95000.0
+    },
+    {
+      "fornecedor": "Transportadora Z",
+      "vencimento": "2026-10-16",
+      "valor": 18000.0
+    },
+    {
+      "fornecedor": "Indústria Y",
+      "vencimento": "2026-10-21",
+      "valor": 90000.0
+    },
+    {
+      "fornecedor": "Indústria X",
+      "vencimento": "2026-10-28",
+      "valor": 105000.0
+    }
+  ],
+  "compras_novas_semanais": [
+    0,
+    0,
+    0,
+    0,
+    100000,
+    100000,
+    110000,
+    115000,
+    120000,
+    120000,
+    110000,
+    95000,
+    80000
+  ],
+  "folha": {
+    "salario_bruto_mensal": 90000.0,
+    "salarios_liquidos_mensal": 72000.0,
+    "adiantamento": {
+      "percentual": 0.4,
+      "dia": 20
+    },
+    "inss_irrf_mensal": 36000.0,
+    "fgts_mensal": 7200.0,
+    "decimo_terceiro": true
+  },
+  "recorrentes": [
+    {
+      "descricao": "Aluguel CD",
+      "dia": 10,
+      "valor": 25000.0,
+      "categoria": "despesas_fixas",
+      "ajuste": "posterga"
+    },
+    {
+      "descricao": "Energia, água, telecom",
+      "dia": 15,
+      "valor": 8000.0,
+      "categoria": "despesas_fixas",
+      "ajuste": "posterga"
+    },
+    {
+      "descricao": "ERP e sistemas",
+      "dia": 5,
+      "valor": 4000.0,
+      "categoria": "despesas_fixas",
+      "ajuste": "posterga"
+    },
+    {
+      "descricao": "Pró-labore sócios (líquido)",
+      "dia": 5,
+      "valor": 20000.0,
+      "categoria": "outras_saidas",
+      "ajuste": "antecipa"
+    },
+    {
+      "descricao": "ICMS próprio (RICMS/UF)",
+      "dia": 20,
+      "valor": 30000.0,
+      "categoria": "tributos",
+      "ajuste": "antecipa"
+    },
+    {
+      "descricao": "PIS/COFINS cumulativo",
+      "dia": 25,
+      "valor": 24000.0,
+      "categoria": "tributos",
+      "ajuste": "antecipa"
+    },
+    {
+      "descricao": "IRPJ/CSLL presumido - 3º tri (quota única)",
+      "dia": "ultimo_dia_util",
+      "meses": [
+        10
+      ],
+      "valor": 57000.0,
+      "categoria": "tributos"
+    },
+    {
+      "descricao": "Capital de giro Banco W - parcela",
+      "dia": 15,
+      "valor": 30000.0,
+      "categoria": "servico_divida",
+      "ajuste": "posterga"
+    }
+  ],
+  "eventos": [
+    {
+      "data": "2026-11-16",
+      "descricao": "Empilhadeira nova (sinal)",
+      "valor": 80000.0,
+      "tipo": "saida",
+      "categoria": "capex"
+    }
+  ],
+  "cenarios": {
+    "pessimista": {
+      "atraso_adicional_dias": 14,
+      "fator_probabilidade": 0.85,
+      "fator_vendas_novas": 0.8,
+      "fator_compras_novas": 0.95,
+      "eventos_extras": [
+        {
+          "data": "2026-11-10",
+          "descricao": "Rescisão sem justa causa (verbas + multa 40% FGTS)",
+          "valor": 45000.0,
+          "tipo": "saida",
+          "categoria": "folha"
+        }
+      ]
+    }
+  },
+  "indicadores": {
+    "dias_base": 360,
+    "receita_bruta_anual": 9100000.0,
+    "cmv_anual": 5200000.0,
+    "compras_anuais": 5300000.0,
+    "contas_receber": 775000.0,
+    "estoques": 870000.0,
+    "fornecedores": 418000.0,
+    "ativo_circulante_operacional": 1645000.0,
+    "passivo_circulante_operacional": 640000.0
+  }
+}
